@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{FEF2AE3B-81FE-4ACE-B342-0830B0C02FD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PonudaApp</RootNamespace>
+    <AssemblyName>PonudaApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>files\icons\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>files\asembly\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="pomoc\Napredak.cs" />
+    <Compile Include="pomoc\BazaPodataka.cs" />
+    <Compile Include="forme\glavna\Glavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\glavna\Glavna.Designer.cs">
+      <DependentUpon>Glavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\opreme\NovaOprema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\opreme\NovaOprema.Designer.cs">
+      <DependentUpon>NovaOprema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\ponude\NovaPonuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\ponude\NovaPonuda.Designer.cs">
+      <DependentUpon>NovaPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\traktori\IzaberiOpremuTraktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\traktori\IzaberiOpremuTraktor.Designer.cs">
+      <DependentUpon>IzaberiOpremuTraktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pomoc\IzvozHtml.cs" />
+    <Compile Include="klase\Kabina.cs" />
+    <Compile Include="klase\Oprema.cs" />
+    <Compile Include="forme\ponude\OdaberiOpremuPonuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\ponude\OdaberiOpremuPonuda.Designer.cs">
+      <DependentUpon>OdaberiOpremuPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\opreme\NovaKategorijaOprema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\opreme\NovaKategorijaOprema.Designer.cs">
+      <DependentUpon>NovaKategorijaOprema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\traktori\NoviTraktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\traktori\NoviTraktor.Designer.cs">
+      <DependentUpon>NoviTraktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\kabine\NovaKabina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\kabine\NovaKabina.Designer.cs">
+      <DependentUpon>NovaKabina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klase\Ponuda.cs" />
+    <Compile Include="pomoc\Program.cs" />
+    <Compile Include="pomoc\PonudaDat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forme\opreme\UrediOpreme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\opreme\UrediOpreme.Designer.cs">
+      <DependentUpon>UrediOpreme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\opreme\UrediOpremu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\opreme\UrediOpremu.Designer.cs">
+      <DependentUpon>UrediOpremu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klase\Traktor.cs" />
+    <Compile Include="forme\kabine\UrediKabine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\kabine\UrediKabine.Designer.cs">
+      <DependentUpon>UrediKabine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\kabine\UrediKabinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\kabine\UrediKabinu.Designer.cs">
+      <DependentUpon>UrediKabinu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\traktori\UrediTraktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\traktori\UrediTraktor.Designer.cs">
+      <DependentUpon>UrediTraktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\traktori\UrediTraktore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\traktori\UrediTraktore.Designer.cs">
+      <DependentUpon>UrediTraktore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\ponude\UrediPonudu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\ponude\UrediPonudu.Designer.cs">
+      <DependentUpon>UrediPonudu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\ponude\UrediPonude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\ponude\UrediPonude.Designer.cs">
+      <DependentUpon>UrediPonude.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forme\glavna\Glavna.resx">
+      <DependentUpon>Glavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\opreme\NovaOprema.resx">
+      <DependentUpon>NovaOprema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\ponude\NovaPonuda.resx">
+      <DependentUpon>NovaPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\ponude\OdaberiOpremuPonuda.resx">
+      <DependentUpon>OdaberiOpremuPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\opreme\NovaKategorijaOprema.resx">
+      <DependentUpon>NovaKategorijaOprema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\traktori\NoviTraktor.resx">
+      <DependentUpon>NoviTraktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\traktori\IzaberiOpremuTraktor.resx">
+      <DependentUpon>IzaberiOpremuTraktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\kabine\NovaKabina.resx">
+      <DependentUpon>NovaKabina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="forme\opreme\UrediOpreme.resx">
+      <DependentUpon>UrediOpreme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\opreme\UrediOpremu.resx">
+      <DependentUpon>UrediOpremu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\kabine\UrediKabine.resx">
+      <DependentUpon>UrediKabine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\kabine\UrediKabinu.resx">
+      <DependentUpon>UrediKabinu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\traktori\UrediTraktor.resx">
+      <DependentUpon>UrediTraktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\traktori\UrediTraktore.resx">
+      <DependentUpon>UrediTraktore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\ponude\UrediPonudu.resx">
+      <DependentUpon>UrediPonudu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\ponude\UrediPonude.resx">
+      <DependentUpon>UrediPonude.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="files\objekti\ponudaList.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\asembly\HtmlAgilityPack.dll" />
+    <Content Include="files\database\PonudaDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\dotnet\NDP452-KB2901954-Web.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\export\export.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\icons\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\export\template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
